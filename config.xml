@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    id          = "com.phonegap.youraaplicationname"
+    versionCode = "1"
+    version     = "v1.0" >
+
+   <icon src="images/prototype-icon-eco.png" />
+
+<!-- versionCode is optional and Android only -->
+
+  <name>NeoCompiler Eco</name>
+
+  <description>
+      Allowing people to easily port their projects.
+  </description>
+
+  <author href="https://github.com/vncoelho" email="vncoelho@gmail.com">
+      Vitor Nazário Coelho, 2018
+  </author>
+
+  <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+  <!--<plugin name="cordova-plugin-whitelist" spec="1.3.3" />-->
+  <!--<gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm" />-->
+
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
+  <access origin="*"  />
+
+  <gap:config-file platform="android" parent="/manifest/application">
+    <activity android:launchMode="singleInstance" />
+  </gap:config-file>
+
+</widget>
